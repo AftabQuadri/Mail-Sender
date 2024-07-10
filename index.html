@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile_responsive.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="box">
+        <div>
+            <nav id="navbar" class="navbarDark">
+                <div id="name">
+                    <span id="surname">Sk</span><i> <span class="middleName"> Aftab</span></i> Quadri
+                </div>
+                <div id="navBarUl">
+                    <ul id="nav_ul">
+                        <li id="x" ><a onclick="closeNavBar()">&#10005;</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="bars" onclick="openNavBar()"><i class="fa-solid fa-bars" style="color: #63E6BE;"></i></div>
+
+            </nav>
+        </div>
+       
+        <section id="homeSection">
+            <div id="subbox">
+                <div id="innerbox1">
+                    <div id="innerbox2">
+                        <h1 id="">
+                            Hi, my name is <br><span id="middleName">Aftab</span> <br> <span id="dynamicText"></span> <br>
+                        </h1>
+                        <a href="images/Aftab_resume6[2].pdf" download="Aftab_resume"><button
+                                class="formSubmit">Download Resume</button></a>
+
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+
+        </section>
+
+    </div>
+
+     <section id="aboutSection">
+        <div id="about">
+            <div id="leftofabout">
+                <div id="profileDiv">
+                    
+                </div>
+            </div>
+            <div id="rightofabout">
+                <p>Hello, Welcome</p>
+                <h1>I am Aftab Quadri</h1>
+                <p class="myDescription">
+                    I am an aspiring and passionate
+                    Java Developer with a keen interest in Frontend development also, looking
+                    forward to create engaging and seamless user experiences, here is a bit about me.
+                    <br><p class="myDescription" id="aboutMyExperience" >I had the privilege of working for a Multinational Company for nearly two years, where I gained
+                    valuable experience in collaborating closely with cross-functional teams to address customer issues
+                    that required input from various departments, such as technical support etc, I also had the
+                    privilage to interact with a diverse client on a regular basis.
+                </p>
+                <br>
+                <p class="myDescription">
+                <h1>My Skills</h1>
+                <div class="skill">
+                    <ul>
+                        <li onclick="displayTechnicalSkill()" class="item"><a href="#about">Technical skills</a></li>
+                        <li onclick="displaySoftSkill()" class="item"><a href="#about">Soft skills </a></li>
+                        <li onclick="displayEducation()" class="item">
+                            <a href="#about"> Education</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <div class="technicalskills">
+                        <h2>Frontend development</h2>
+                        <p>HTML | CSS | JS</p>
+                        <h2>Backend development</h2>
+                        <p>Java | J2EE </p>
+                        <h2>Frameworks and tools</h2>
+                        <p>Spring Core | Spring Boot | Hibernate | Eclipse | VS Code</p>
+                    </div>
+                    <div class="softSkills">
+                        <h2>Adaptability</h2>
+                        <p>Adept at adapting to dynamic environments while maintaining productivity and composure.</p>
+                        <h2>Problem solving </h2>
+                        <p>Skilled in problem identification, root cause analysis, and implementing effective solutions
+                            to enhance processes.
+                        </p>
+                        <h2>Collaboration</h2>
+                        <p>Effective team player, valuing diverse perspectives to achieve common goals collaboratively.
+                            .</p>
+                        <h2>Time Management</h2>
+                        <p>Efficient at task prioritization, scheduling, and meeting deadlines, optimizing workflow and
+                            resource usage.</p>
+                    </div>
+                    <div class="education">
+                        <h2>B.Tech</h2>
+                        <p>B.Tech in Electronics and Communication Engineering from Nalanda Institute of Technology,
+                            BBSR</p>
+                        <h2>Intermediate</h2>
+                        <p>Bhadrak Junior College, Bhadrak</p>
+                        <h2>School</h2>
+                        <p>Zilla School, Bhadrak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="projectSection">
+        <div id="work">
+
+            <div id="insidework">
+                <div id="firstproject" class="insidework ">
+                    <div class="logoAndText">
+                        <div class="projectlogo" id="waste_logo"></div>
+                        <div class="projectText">
+                            <div class="projectTitle">
+                                <h1>Waste management website</h1>
+                            </div>
+                            <div class="aboutProject">
+                                <p>The website connects people who want to give away items they no longer need with
+                                    those who are looking for them.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectLink">
+                        <a href="https://github.com/AftabQuadri/Wastemanagement"><button>GitHub Link</button></a>
+                    </div>
+                </div>
+                <div id="secondproject" class="insidework ">
+                    <div class="logoAndText">
+                        <div class="projectlogo" id="weather_logo"></div>
+                        <div class="projectText">
+                            <div class="projectTitle">
+                                <h1>Weather App</h1>
+                            </div>
+                            <div class="aboutProject">
+                                <p>The web app, built with HTML, CSS, JavaScript, and Java, utilizes an API to display
+                                    real-time weather information for any chosen area or city.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectLink">
+                        <a href="https://github.com/AftabQuadri/Weather-App"><button>GitHub Link</button></a>
+                    </div>
+                </div>
+                <div id="thirdproject" class="insidework ">
+                    <div class="logoAndText">
+                        <div class="projectlogo" id="notes_logo"></div>
+                        <div class="projectText">
+                            <div class="projectTitle">
+                                <h1>Notes App</h1>
+                            </div>
+                            <div class="aboutProject">
+                                <p>The Android app, developed with Android Studio, employs the MVVM architecture and
+                                    integrates the Room library. It enables users to take daily notes efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectLink">
+                        <a href="https://github.com/AftabQuadri/Notes-App"><button>GitHub Link</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contactSection">
+        <div class="formandcontact">
+
+            <div id="contact">
+
+                <div id="contactinnerdiv" >
+                    <div id="contactinnerdivText">
+                        <h1>Interested in working with me ?<br>
+                            Or just wanna to say "Hello" ?<br>
+                            drop a mail to <br>
+                            <span class="middleName"><a href="mailto:skaftab984@gmail.com">
+                                    skaftab984@gmail.com</a></span>
+                                    <span id="or">Or</span>
+                        </h1>
+                    </div>
+                    <div class="form">
+                        <form method="post" action="http://localhost:8080/getVD">
+                            <input name="visitorName" type="text" id="yourName" placeholder="Your Name" class="formEl" required><br>
+                            <input name="visitorEmail" type="email" id="yourEmail" placeholder="Your Email" class="formEl" required><br>
+                            <textarea name="visitorMessage" id="yourMessage" cols="30" rows="10" class="formEl"
+                                      placeholder="Enter your message here" required></textarea>
+                            <br><button type="submit" class="formSubmit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="social_links" >
+                    <a href="https://linkedin.com/in/sk-aftab-quadri-3063b8200"><i class="fa-brands fa-linkedin fa-2xl social"
+                            style="color: #63E6BE;"></i></a>
+                    <a href="https://github.com/AftabQuadri"><i class="fa-brands fa-github fa-2xl social"
+                            style="color: #63E6BE;"></i></a>
+                    <a href="https://www.hackerrank.com/profile/Quadriaftab0"><i class="fa-brands fa-hackerrank fa-2xl social"
+                            style="color: #63E6BE;"></i></a>
+                    <a href="https://www.instagram.com/quadri.127/"><i class="fa-brands fa-instagram fa-2xl social"
+                            style="color: #63E6BE;"></i></a>
+                    <a href="https://wa.me/+917735667057"><i class="fa-brands fa-whatsapp fa-2xl social"
+                            style="color: #63E6BE;"></i></a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <hr>
+    <div class="footer">
+        <p>© 2024 Made with <span id="heart"> &hearts; </span>  by Aftab All rights reserved</p>
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
